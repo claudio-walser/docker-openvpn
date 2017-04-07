@@ -1,6 +1,6 @@
 # Original credit: https://github.com/kylemanna/docker-openvpn
 
-FROM kylemanna/docker-openvpn
+FROM kylemanna/openvpn
 
 MAINTAINER Claudio Walser
 
