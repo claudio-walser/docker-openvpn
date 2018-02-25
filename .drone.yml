@@ -5,9 +5,12 @@ pipeline:
     image: plugins/docker
     docker:
       registry: registry.net-sec.ch
+      username: $username
+      password: $password
       email: claudio.walser@net-sec.ch
       repo: net-sec/openvpn
       tags:
+        - latest
         - 1.0.0
         - 1.0
         - 1
