@@ -1,6 +1,7 @@
 pipeline:
   publish:
     docker:
+      image: plugins/docker
       registry: registry.net-sec.ch
       email: claudio.walser@net-sec.ch
       repo: net-sec/openvpn
