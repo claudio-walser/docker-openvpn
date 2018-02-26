@@ -3,18 +3,6 @@ pipeline:
 
   publish:
     image: plugins/docker
-    docker:
-      registry: registry.net-sec.ch
-      username: $username
-      password: $password
-      email: claudio.walser@net-sec.ch
-      repo: net-sec/openvpn
-      tags:
-        - latest
-        - 1.0.0
-        - 1.0
-        - 1
-      #autotag: true
-      when:
-        #event: tag
-        event: push
+    repo: net-sec/openvpn
+    tags: [ 1, 1.0, 1.0.0, latest ]
+    registry: registry.net-sec.ch
