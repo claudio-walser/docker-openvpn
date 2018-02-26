@@ -3,6 +3,6 @@ pipeline:
 
   publish:
     image: plugins/docker
-    repo: net-sec/openvpn
+    repo: registry.net-sec.ch/net-sec/openvpn
     tags: [ 1, 1.0, 1.0.0, latest ]
     registry: registry.net-sec.ch
