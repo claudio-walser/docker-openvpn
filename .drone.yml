@@ -3,8 +3,6 @@ pipeline:
 
   publish:
     image: plugins/docker
-    repo: registry.net-sec.ch/net-sec/openvpn
-    username: ${username}
-    password: ${password}
+    repo: ${username}:${password}@registry.net-sec.ch/net-sec/openvpn
     tags: [ 1, 1.0, 1.0.0, latest ]
     registry: registry.net-sec.ch
