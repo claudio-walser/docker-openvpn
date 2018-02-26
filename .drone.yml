@@ -4,10 +4,8 @@ pipeline:
   publish:
     image: plugins/docker
     tags: [ 1, 1.0, 1.0.0, latest ]
-    registry: registry.net-sec.ch
+    registry: registry-0:5000
+    insecure: true
     repo: net-sec/openvpn
-    username: $REGISTRY_USERNAME
-    password: $REGISTRY_PASSWORD
-    secrets: [ registry_username, registry_password ]
     environment:
       DOCKER_LAUNCH_DEBUG: 'true'
