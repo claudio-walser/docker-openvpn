@@ -4,8 +4,7 @@ pipeline:
   publish:
     image: plugins/docker
     tags: [ 1, 1.0, 1.0.0, latest ]
-    registry: registry-0:5000
     insecure: true
-    repo: net-sec/openvpn
+    repo: registry-0:5000/net-sec/openvpn
     environment:
       DOCKER_LAUNCH_DEBUG: 'true'
